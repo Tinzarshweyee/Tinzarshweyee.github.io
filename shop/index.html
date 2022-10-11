@@ -7,12 +7,53 @@
     <title>Index</title>
 
     <style>
-        #heading{
+        * {
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        
+        header{
             text-align: center;
-            border: 1px solid black;
-            background-color:rgb(224, 177, 78);
+            font-size:35px;
+            
+            background-color:rgb(224, 174, 64);
+            padding:30px;
+
+        }
+
+        nav{
+            float:left;
+            width:30%;
+            height:450px;
+            
+            background-color: rgb(238, 193, 96);
+            padding:20px;
+        }
+
+        nav ul{
+          list-style-type:none;
+          padding:0;
+        }
+
+        article{
+          width:70%;
+          background-color: rgb(233, 206, 149);
+          height:450px;
+          float:left;
+          padding:20px;
+          
+        }
+
+        section::after{
+          content:"";
+          display:table;
+          clear:both;
         }
         .center{
+
             text-align:center;
         }
             
@@ -33,28 +74,32 @@
 </head>
 <body>
     
-<header id="heading">
-    <h1>Barbie House</h1>
-</header>
-
-<section>
-    <nav>
-        <ul>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
-</section>
-
-<div class="center">
-      <p ><h2>There are a lot of dolls in this shop.<br>
-    Bye now.</h2></p>
-</div>
-
-    <img src="doll1.avif" alt="Dolls" style="width:20%;">
-      
     
+    <header>
+      <h2>Doll House</h2>
+    </header>
+    
+    
+    <section>
+      <nav>
+        <ul>
+          <li><a href=pages/products.html>Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      
+      <article>
+        <h1>Doll House</h1>
+          <p>YOU CAN BUY DOLLS IN DOLL HOUSE. </p>
+          <div id="images">
+            <img src="Image/doll1.avif" alt="doll" height="330px">
+          </div>  
+      </article>
+    </section>
+    
+    
+
 
     
 </body>
