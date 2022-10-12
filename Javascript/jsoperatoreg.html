@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS operators</title>
+
+</head>
+<body>
+    <h1>JS operators</h1>
+
+    <script>
+        //find total and average of 3 subjects
+        //input.--sub1,sub2,sub3
+        //process--total=sub1+sub2+sub3
+        //output--average=total/3
+
+        //input
+        let subject1=parseInt(prompt("Enter subject1 marks:"));
+        let subject2=parseInt(prompt("Enter subject2 Marks:"));
+        let subject3=parseInt(prompt("Enter subject3 Marks:"));
+
+        //process
+        let total=subject1+subject2+subject3;
+        let average=total/3;
+
+        //output
+        console.log("Subject 1:",subject1);
+        console.log("Subject 2",subject2);
+        console.log("Subject 3:",subject3);
+
+        console.log("Total:", total);
+        console.log("Average:",average.toFixed(2));
+    </script>
+</body>
+</html>

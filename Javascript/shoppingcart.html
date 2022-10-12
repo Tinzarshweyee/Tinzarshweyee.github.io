@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <h1>Shopping cart</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>No:</th>
+                <th>Item Name:</th>
+                <th>Unit Price:</th>
+                <th>Quantity:</th>
+                <th>SubTotal:</th>
+            </tr>
+        </thead>
+        <tbody id="mydata">
+
+        </tbody>
+
+    <script>
+        //get 3 items name,price,quantity and display with subtotal and total
+
+        //input
+        let name1=prompt("Enter item1 name:");
+        let name2=prompt("Enter itme2 name:");
+        let name3=prompt("Enter item3 name:");
+
+        let price1=parseInt(prompt("Enter "+name1+ " unit price:"));
+        let price2=parseInt(prompt("Enter "+name2+ " unit price:"));
+        let price3=parseInt(prompt("Enter "+name3+ " unit price:"));
+
+        let quantity1=parseInt(prompt("Enter "+name1+" Quantity:"));
+        let quantity2=parseInt(prompt("Enter "+name2+" Quantity:"));
+        let quantity3=parseInt(prompt("Enter "+name3+" Quantity:"));
+        //process:subtotal grandtotal
+
+        let subtotal1=price1*quantity1;
+        let subtotal2=price2*quantity2;
+        let subtotal3=price3*quantity3;
+        let total=subtotal1+subtotal2+subtotal3;
+
+        //output
+        // document.write("Your shopping Item:");
+        // document.write(name1+" "+price1+" "+quantity1+"==> "+subtotal1+"<br>");
+        // document.write(name2+" "+price2+" "+quantity2+"==> "+subtotal2+"<br>");
+        // document.write(name3+" "+price3+" "+quantity3+"==> "+subtotal3+"<br>");
+        // document.write("Total:==>"+total);
+
+        let html= `<tr>
+            <td>1</td> <td>${name1}</td> <td>${price1}</td> <td>${quantity1}</td> <td>${subtotal1}</td>
+                    </tr> `;
+
+            document.getElementById("mydata").innerHTML =html;
+
+    </script>
+
+    
+    </table>
+</body>
+</html>
