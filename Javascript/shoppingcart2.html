@@ -60,6 +60,26 @@
             </tr>
             `;
 
+            if(total>=10000){
+                let discount=total * 0.1;
+                let grand_total=total-discount;
+
+                document.getElementById("mydata").innerHTML +=` 
+            <tr>
+                <td colspan="4">Discount</td>
+                <td>${discount}</td>
+            </tr>
+            `;
+
+
+                document.getElementById("mydata").innerHTML +=` 
+            <tr>
+                <td colspan="4">Grand Total</td>
+                <td>${grand_total}</td>
+            </tr>
+            `;
+            }
+
             
         }
     </script>
