@@ -14,6 +14,7 @@
     <style>
        
        body{
+        position: relative;
         font-family: 'Open Sans', sans-serif;
         background: #F0EEEE;
     }
@@ -39,10 +40,10 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-sm bg-light navbar-light ">
+    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#" style="">
-            <img src="Imagespg/logo.svg" alt="Avatar Logo" style="width:60px;" class="rounded-pill"> 
+          <a class="navbar-brand" href="#" >
+            <img src="Imagespg/logo.svg" alt="Avatar Logo" style="width:50px;" class="rounded-pill"> 
            Tin Zar
         </a>
 
@@ -51,26 +52,39 @@
           </button>
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
+
               <li class="nav-item">
-                <a class="nav-link" href="myprojects.html">My Projects</a>
+                <a class="nav-link" href="#section1">Section 1</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="myskills.html">My Skills</a>
+                <a class="nav-link" href="#section2">Section 2</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="aboutme.html">About Me</a>
-              </li>  
-              <li class="nav-item">
-                <a class="nav-link" href="contactme.html">Contact me</a>
-              </li>   
+                <a class="nav-link" href="#section3">Section 3</a>
+              </li>
+
             </ul>
           </div>
         </div>
       </nav>
 
+      <div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+        <h1>Section 1</h1>
+        <h2>Warmly Welcome From My Portfolio Website</h2>
+
+        <div class="col-sm-4">
+                
+          <h5>Photo of me:</h5>
+          <img src="Imagespg/myphoto.svg" class="rounded" alt="My photo" >
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi illo non repellat, repellendus aliquid voluptatum atque id praesentium ratione explicabo commodi voluptates, voluptatibus, fugit quae odio quas. Iure, quos dolorum!
+
+          </p>
+      </div>
+      </div>
+
       
       
-      <div class="container-fluid mt-3">
+      <!-- <div class="container-fluid mt-3">
         <h2>Warmly Welcome From My Portfolio Website</h2>
         <div class="row">
 
@@ -86,7 +100,7 @@
             </div>
         </div>
 
-      </div>
+      </div> -->
 
 
 </body>
