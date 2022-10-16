@@ -21,21 +21,28 @@
        
         .nav-item{
            font-size: 18px;
-           padding-right: 30px;
+           /* padding-right: 30px; */
            padding-left: 100px;
+           
 
 
 
         }
 
-        @media (min-width: 320px) and (max-width: 769px){
-        .change {
-            flex-direction: column-reverse;
+        .column{
+          float: left;
+          width: 50%;
+          padding:10px;
+
         }
-        .intro {
-            margin-top: 3rem;
+
+        @media (max-width:600px){
+          .column{
+            width: 100%;
+          }
         }
-    }
+
+        
     </style>
 </head>
 <body>
@@ -43,7 +50,7 @@
     <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#" >
-            <img src="Imagespg/logo.svg" alt="Avatar Logo" style="width:50px;" class="rounded-pill"> 
+            <img src="Imagespg/logo.svg" alt="Avatar Logo" style="width:55px;" class="rounded-pill"> 
            Tin Zar
         </a>
 
@@ -69,38 +76,48 @@
       </nav>
 
       <div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
-        <h1>Section 1</h1>
-        <h2>Warmly Welcome From My Portfolio Website</h2>
-
-        <div class="col-sm-4">
-                
-          <h5>Photo of me:</h5>
-          <img src="Imagespg/myphoto.svg" class="rounded" alt="My photo" >
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi illo non repellat, repellendus aliquid voluptatum atque id praesentium ratione explicabo commodi voluptates, voluptatibus, fugit quae odio quas. Iure, quos dolorum!
-
-          </p>
-      </div>
-      </div>
-
-      
-      
-      <!-- <div class="container-fluid mt-3">
-        <h2>Warmly Welcome From My Portfolio Website</h2>
+        <!-- <h1>Section 1</h1> -->
+        <h1>Warmly Welcome From My Portfolio Website...</h1>
         <div class="row">
+          <div class="column">
 
-            <div class="col-sm-4">
-                
-                <h5>Photo of me:</h5>
-                <img src="Imagespg/myphoto.svg" class="rounded" alt="My photo" >
+            <h5>Photo of me:</h5>
+            <img src="Imagespg/myphoto.svg" class="rounded" alt="My photo" style="width:330px" >
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi illo non repellat, repellendus aliquid voluptatum atque id praesentium ratione explicabo commodi voluptates, voluptatibus, fugit quae odio quas. Iure, quos dolorum!
 
-            </div>
+            </p>
+          </div>
 
-            <div class="col-sm-8">
-                <h2>About Me</h2>
-            </div>
+          <div class="column">
+            <h2>About me</h2>
+            <p><b>Email</b>Email account : shweyeetinzar@gmail.com</p><br>
+            <p><h1>Github</h1> user name :  Tinzarshweyee </p>
+            <h2></h2>
+          </div>
         </div>
+      </div>
 
-      </div> -->
+      <div id="section2" class="container-fluid bg-warning" style="padding:100px 20px; height:600px;">
+          <h1>SSSss</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, repellendus tenetur optio, dolorem laboriosam mollitia voluptate in magni, necessitatibus nostrum unde odio deleniti voluptas praesentium exercitationem omnis distinctio ab aperiam?
+
+            </p>
+        
+      </div>
+
+      <div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 20px;" >
+          <h1>Section 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde culpa voluptatem consequatur quam voluptate eum a. Illo nemo tenetur, rerum aut, adipisci, quos unde consequuntur eveniet quam ducimus quis veritatis.
+
+            </p>
+
+      </div>
+
+      
+      
+      
+
+      
 
 
 </body>
