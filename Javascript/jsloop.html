@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Loop</title>
+</head>
+<body>
+    <h1> Js Loop </h1>
+
+    <script>
+        //for loop, while loop , do while loop
+        //loop: 1: counter :initialize =0 ,1 ,
+        //2: condition
+        //3: increment operator:
+    
+        for(var i=1; i<=10; i++) //initialize, condition, increment or decrement
+        document.write(i + ":hello world<br>");
+        
+        for(var j=10; j>0 ; j--)
+        document.write(j + ": hello world<br>");
+        
+        let a=10;
+        let b=20;
+        // console.log(a++); //a=10
+    
+        // console.log(a);// a=11
+        // console.log(++a);//a=12
+        // console.log(a);//a=12
+
+        let c=a++ +10; //20
+        let d=a + ++b; // 32
+        let e= ++a + --b; //11+ 21= 32
+        let f=a-- -b++; // 11 - 21= -10
+
+        console.log(e);
+        console.log(f);
+
+        let flag=true;
+        if(!flag){
+            alert('hi');
+        }
+
+        //ask user to enter number for 5 times :
+        //sum to get total 
+        // show result
+
+        //input ,process, output
+        // var total=0;
+        // let answer=parseInt(prompt("How many numbers?"));
+        // for(var i=1; i<=answer; i++){
+        //     let number=parseInt(prompt("enter a number"));
+        //     total += number;// total =total +num
+
+        // }
+        // alert('Total:' +total);
+
+        // var sum=0;
+        // let answer=parseInt(prompt("How many numbers:"));
+
+        // for(var i=1; i<=answer; i++ ){
+        //     sum +=i;
+        // }
+
+        // alert("The sum is up to "+answer+": " + sum );
+
+
+        //..........nested loop.............
+
+        // for(var i=1; i<=5; i++){
+        //     for(var j=1; j<=i; j++){
+        //     document.write(' * ');
+        // }
+        // document.write('<br>');
+        // }
+
+
+        let answer=parseInt(prompt("Enter a number : "));
+        for(var i=1; i<=12; i++){
+            let result=answer*i;
+            document.write(answer+'* ' +i + '= ' +result + '<br>');
+        }
+
+    </script>
+    
+</body>
+</html>
