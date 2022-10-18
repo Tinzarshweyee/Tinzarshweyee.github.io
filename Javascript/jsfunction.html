@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Function</title>
+</head>
+<body>
+    <h3 onclick="show('mg mg')">JS Function</h3>
+
+    <script>
+        //1.function name(arguments or parameter) 2.return
+        //function  f(x)=x+5--f(2)=7
+        function show(name){
+            alert('hi ' +name);
+        }
+
+        function f(x){
+            let result =x+5;
+            // console.log(result);
+            return result;
+        }
+        // f(2);
+        // f(3);
+
+        let f2=f(2); //return pyan tin variable nae accept ya tl
+        let f3=f(3);
+
+        function avg(num1,num2,num3){
+            return(num1+num2+num3)/3;
+
+        }
+        let myavg=avg(4,5,6);
+        console.log("Average " +myavg);
+
+        const student={  //object
+            name:"mg mg",
+            age :25
+        }; 
+        
+        student.name="Aye aye";
+        console.log(student);
+    </script>    
+</body>
+</html>

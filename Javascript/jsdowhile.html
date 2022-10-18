@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do While</title>
+</head>
+<body>
+    <h1>Do While</h1>
+
+    <script>
+//whiel= condition loop count don't know exactly
+//do while =first time don't check , check at second time
+//for = know loop count exactly
+        // let number=1; //initialize
+        // let sum=0;
+        // do{  //first time skip condition;
+        //     sum+=number++;
+        //     // number++
+
+        // }while(number<=10); //check condition on second time
+        // document.write("Sum:" +sum);
+
+        do{
+        let number=parseInt(prompt("Enter a number: "));
+        if(number%2==1){
+            alert("Odd");
+        }
+        else{
+            alert("Even");
+        }
+            
+        var ans=confirm("Wanna try again: ");
+        } while(ans);
+
+
+
+    </script>
+</body>
+</html>
