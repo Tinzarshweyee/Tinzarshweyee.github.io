@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h3>JS Array</h3>
+
+    <h4>Registration</h4>
+    Name: <input type="text" id="name"><br>
+    Age: <input type="number" id="age"><br>
+    City: <input type="text" id="city"><br>
+    <button onclick="addStudent()">Register</button>
+
+
+
+
+
+
+
+    <h4>Student list</h4>
+    <table border="1px" cellpadding="10">
+        <thead>
+            <tr>
+                <th>NO.</th>
+                <th>Name.</th>
+                <th>Age</th>
+                <th>City</th>
+
+            </tr>
+        </thead>
+        <tbody id="mydata">
+            
+        </tbody>
+    </table>
+
+    <script>
+        let myStudentList=[];
+        function addStudent(){
+            //get data from form 
+            let name=document.getElementById("name").value;
+            let age=document.getElementById("age").value;
+            let city=document.getElementById("city").value;
+            //add to array  build object and push
+            let student={
+                name : name,
+                age : age, 
+                city :city
+            }
+
+            myStudentList.push(student);
+            //show data
+            // console.log(myStudentList);
+            showData();
+        }
+
+        function showData(){
+            let html='';
+
+        
+        for(var i=0; i<myStudentList.length; i++){
+            // console.log(studentList[i]);
+            let student=myStudentList[i];
+            console.log(student.name,student.age, student.city);
+         
+
+         html +=`<tr>
+            <td>${i+1}</td>  <td>${student.name}</td>  <td>${student.age}</td>  <td>${student.city}</td>
+
+            </tr>`;
+
+        }
+        document.getElementById("mydata").innerHTML=html;
+        }
+
+        
+
+       //array
+        // let students=['Mg Mg','Aye Aye','Moe Moe','Ko Ko'];
+        // console.log(students);
+        // console.log(students[0]);
+        // console.log(students[1]);
+
+        let fruits=[];
+        //push  arry htae htae tr
+
+        fruits.push("Banana");
+        fruits.push("apple");
+        fruits.push("Grape");
+
+        console.log(fruits);
+
+        //pop array ka ny hote tr
+
+        console.log(fruits.pop());
+        console.log(fruits);
+
+        //string functions
+        let greeting="hello bootcampers";
+        console.log(greeting.length); 
+        console.log(greeting.indexOf('h')); //finding the word, if there is not ,show -1
+        console.log(greeting.charAt(6));
+
+        //object array
+        let student1={
+            name:'aye aye',
+            age:20,
+            city:'Mandalay'
+        }
+
+        let student2={
+            name:'aye aye',
+            age:20,
+            city:'Yangon'
+        }
+
+        let student3={
+            name:'mg mg',
+            age:20,
+            city:'Yangon'
+        }
+
+        let html='';
+
+        let studentList=[student1,student2];
+        studentList.push(student3);
+        console.log(studentList.length);
+        for(var i=0; i<studentList.length; i++){
+            // console.log(studentList[i]);
+            let student=studentList[i];
+            console.log(student.name,student.age, student.city);
+         
+
+         html +=`<tr>
+            <td>${i+1}</td>  <td>${student.name}</td>  <td>${student.age}</td>  <td>${student.city}</td>
+
+            </tr>`;
+
+        }
+        document.getElementById("mydata").innerHTML=html;
+    </script>
+
+    
+</body>
+</html>

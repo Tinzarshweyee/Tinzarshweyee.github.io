@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form</h1>
+    Date: <input type="date" id="date">
+    Name: <input type="text" id="name">
+    Amount:
+    <button onclick="addExpense()">add</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+
+        <tbody id="mydata">
+            <tr>
+                <td>1</td>
+                <td>20/10/2022</td>
+                <td>Tea</td>
+            </tr>
+            <tr>
+                <td colspan="3">Total</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
