@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSDom</title>
+    <style>
+        .red{
+            color:rgb(74, 74, 143);
+        }
+    </style>
+</head>
+<body>
+    <!-- Dom document object model ...can change in the document from script -->
+    <h1 id="myh1">JS DOM</h1>
+    <p id="myp">getElementById</p>
+    <p class="red">getElementbyTagName</p>
+    <p class="red">getElementByClassName</p>
+    <p class="red">getElementByName</p>
+    
+    <button onclick="show()">Click Me</button>
+
+    <script>
+        function show(){
+
+        //.......getElementById
+        //    console.log('hi') 
+        let myh1=document.getElementById('myh1');
+        console.log(myh1.innerHTML);
+        myh1.innerHTML="My <b>updated</b> HTML text";
+        console.log(myh1.innerHTML);
+
+        let myp=document.getElementById('myp')
+        console.log(myp.innerHTML);
+        myp.innerHTML="my update <i>p text</i> for myp";
+        
+        
+        //....getEleClass
+        let myreds=document.getElementsByClassName('red');
+        console.log(myreds[0].innerHTML);
+        myreds[0].innerHTML="My red class 1: ";
+        myreds[1].innerHTML="My red class 2: ";
+        myreds[2].innerHTML="My red class 3: ";
+
+        /// ...getEle TAg name
+        let myptags=document.getElementsByTagName('p');
+        console.log(myptags);
+        myptags[0].innerHTML="Updated my P tags by tag Name:"
+        myptags[1].innerHTML="Updated "
+
+
+        //...querySelector
+        let myh2=document.querySelector('#myh1');
+        console.log(myh2);
+
+        let myp2=document.querySelector('#myp');
+        console.log(myp2);
+
+
+        let myRedClass=document.querySelectorAll('.red')
+        console.log(myRedClass);
+
+        }
+    </script>
+</body>
+</html>

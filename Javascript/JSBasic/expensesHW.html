@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form</h1>
+    Date: <input type="date" id="date"> <br>
+    Name: <input type="text" id="name"> <br>
+    Amount: <input type="number" id="amount"> <br>
+    <button onclick="addExpense()">Add</button>
+
+    <table border="1px" cellpadding="10">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+
+        <tbody id="mydata">
+            
+        </tbody>
+    </table>
+
+
+    <script>
+        let html='';
+        //get data
+        let myExpenses=[];
+        function addExpense(){
+            let date=document.getElementById("date").value;
+            let name=document.getElementById("name").value;
+            let amount=document.getElementById("amount").value;
+
+        //add data to array..., build object and push
+        let expense={
+            date :date,
+            name :name,
+            amount :amount
+        }
+        myExpenses.push(expense);
+
+        //show data  ..., use looping, expense=myExpense[i]
+        //console.log(myExpenses);
+        //put into table
+        //document.getElementById(mydata)
+        showData();
+
+        }
+
+        function showData(){
+
+            for(var i=0; i<myExpenses.length; i++){
+                let expense=myExpenses[i];
+                console.log(expense.date,expense.name,expense.amount);
+            }
+
+            html +=`<tr>
+                    <td>${i+1}</td> <td>${expense.date}</td> <td>${expense.name}</td>  <td>${expense.amount}</td>               
+                </tr>
+            `;
+        }
+        document.getElementById("mydata").innerHTML=html;
+
+
+    </script>
+</body>
+</html>
