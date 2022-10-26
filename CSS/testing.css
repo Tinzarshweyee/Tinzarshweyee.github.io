@@ -3,3 +3,84 @@ h1{
     text-align:center;
     font-size: 50px;
 }
+
+/* Universal Selector */
+*{
+    color:rgb(196, 131, 47);
+}
+
+/* Tag Element selector */
+h2{
+    color:green;
+}
+
+h2{
+    color:red;
+    text-align:left;
+}
+
+/* attribute selector */
+a[title="google"]{
+    display:inline-block;
+    color:black;
+    text-decoration:none; 
+
+}
+
+/* id selector */
+#idselector{
+    text-indent:40px;
+    font-size:30px;
+    word-spacing:30px;
+    letter-spacing:2px;
+    line-height:40px;
+}
+
+.classelector{
+    color:brown;
+    letter-spacing:20px;
+}
+
+/* Descendent Selector */
+
+#desc a{
+    color:red;
+}
+
+/* Child Selector */
+#child > a{
+    color:blue;
+}
+
+/* Pseudo */
+.pseudo:link{
+    text-decoration: none;
+    letter-spacing:15px;
+}
+
+.pseudo:hover{
+    text-decoration: underline;
+    letter-spacing: 10px;
+}
+
+.pseudo:active{
+    color:green;
+}
+
+.pseudo:visited{
+    color:red;
+}
+
+/* Target */
+:target{
+    border:1px solid red;
+    color:red;
+}
+
+/* p:target{
+    border:1px solid red;
+    color:red;
+} */
+
+
+
