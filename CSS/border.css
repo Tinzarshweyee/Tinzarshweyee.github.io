@@ -1,0 +1,37 @@
+.borderone{
+    border:4px dashed red;
+}
+
+#title{
+    text-align:center;
+    color:green;
+}
+
+.bordertwo{
+    border-top:10px double green;
+    border-bottom: 10px double red;
+}
+
+.borderstyle{
+    border-style:solid;
+}
+
+.borderstylemix{
+    /* border-style:solid; */
+
+    /*all */
+
+    /* border-style:solid dotted; */
+    /* top and bottom and left and right */
+
+    border-style:solid dashed double; 
+    /* top left&right bottom */
+
+}
+
+
+.borderwidth{
+    border-width:2px 30px  ;
+    border-style:solid;
+    border-color:antiquewhite;
+}

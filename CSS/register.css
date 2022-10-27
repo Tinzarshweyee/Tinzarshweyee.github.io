@@ -1,0 +1,88 @@
+/* target --a link, focuse input box */
+
+
+#header{
+    text-align: center;
+}
+
+#body{
+background-color:burlywood
+}
+form{
+    width:50%;
+    margin:auto;
+}
+
+input[type="text"],input[type="email"],input[type="number"]{
+    width:100%;
+    height:40px;
+    outline:none;
+}
+
+input[type="text"]:focus,input[type="email"]:focus,input[type="number"]:focus{
+    border:4px solid grey;
+}
+
+input[type="radio"]:checked + label {
+    color:red;
+}
+
+input[type="checkbox"]:enabled +label {
+    color:yellow;
+    font-style: italic;
+}
+
+input[type="checkbox"]:checked+label{
+color:red;
+font-style:normal;
+}
+
+input[type="checkbox"]:disabled+label{
+    color:grey;
+}
+
+#address{
+    width:100%;
+    height:100px;
+    outline:none;
+}
+
+li:first-child{
+    background-color: green;
+}
+
+li:last-child{
+    background-color:red;
+}
+
+li:nth-child(3){
+    background-color:yellow;
+}
+
+li:nth-child(4){
+    background-color:orange;
+}
+
+p:empty{
+    background-color:green;;
+    height: 20px;
+    
+}
+
+.thanku{
+    text-align:center
+}
+
+.button{
+    text-align:right;
+}
+.button button{
+    text-align:center;
+    width:100px;
+    height: 30px;
+}
+
+button button:hover{
+    color:white;
+   
+}
