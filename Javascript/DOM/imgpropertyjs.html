@@ -6,12 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Image Action</title>
 </head>
-<body>
+<body onlode="">
+
+    <p id="mytime"></p>
+
+    Name:<input type="text" name="name" id="name" onchange="show2d()" onkeyup="show2d()"><br><br>
     <img src="../../images/logo1.png" id="myimg" onmouseover="big()" onmouseout="normal()" width="200px" height="200px">
 
 
 
     <script>
+        showTime();
+        function showTime(){
+            let now=new Date();
+            let todayDate=now.toLocaleDateString();
+            let currentTime=now.toLocaleTimeString();
+            document.getElementById("mytime").innerHTML="Date:"+todayDate+"Time:"+currentTime;
+        }
+
+        function show2d(){
+            let myrandom=Math.random();
+            let my2d=100*myrandom;
+            alert(my2d.toFixed(0));
+        }
+
+
+
+
+
+
+
+        function sayhi(){
+            // alert('hi changed!')
+            let ans=confirm("Wannna of to YouTube?")
+            if(ans){
+                document.location.href="https://www.youtube.com"
+            }
+
+            else{
+                document.location.href="https://www.google.com"
+            }
+        }
+
+
         function big(){
             // console.log('hi');
             //point
@@ -25,8 +62,29 @@
         function normal(){
             let myimg=document.getElementById('myimg');
             myimg.setAttribute('width','200px');
-            myimg.setAttribute('height','150px')
+            myimg.setAttribute('height','150px');
+            changephoto();
         }
+
+        function changephoto(){
+            let myimg=document.getElementById("myimg");
+            mysrc=myimg.getAttribute("src");
+            console.log(mysrc);
+            if(mysrc=="../../images/logo1.png"){
+                myimg.setAttribute("src","../../images/logo2.png")
+            }
+
+            else if(mysrc=="../../images/logo2.png"){
+                myimg.setAttribute("src","../../images/logo4.png")
+            }
+
+            else{
+                myimg.setAttribute("src","../../images/logo1.png")
+            }
+        }
+
+
+        
     </script>
     
 </body>

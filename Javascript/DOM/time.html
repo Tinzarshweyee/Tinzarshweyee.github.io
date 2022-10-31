@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <p id="mytime"></p>
+    <button onclick="stopTime()">Stop</button>
+
+    <button onclick="myvar=setTimeout('alert(\'Hello\')',3000)">Say hi</button>
+    <button onclick="clearTimeout(myvar)">Stop hi</button>
+
+    <script>
+       var mytimer= setTimeout('showTime()',1000);
+        // showTime();
+        function showTime(){
+            let now=new Date();
+            let todayDate=now.toLocaleDateString();
+            let currentTime=now.toLocaleTimeString();
+            document.getElementById("mytime").innerHTML="Date:"+todayDate+"Time:"+currentTime;
+        }
+
+        function stopTime(){
+            clearInterval(mytimer);
+        }
+    </script>
+</body>
+</html>
