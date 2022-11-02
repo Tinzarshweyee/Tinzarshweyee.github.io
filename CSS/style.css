@@ -1,0 +1,66 @@
+*{
+    margin:0px;
+    padding:0px;
+
+}
+/* Margine */
+.marginone{
+    margin:50px;
+    /* all four*/
+    margin:100px 50px;
+    border:2px solid black;
+}
+
+.header{
+    text-align:center;
+    color:red;
+}
+
+.margintwo{
+    margin-top:20px;
+    border:2px solid black;
+}
+
+/* Padding */
+.padding{
+    padding:50px;
+    /* padding-top, padding-bottom */
+    /* padding:50px 100px 2px 3px; */
+    border:2px solid black;
+
+}
+
+/* Inline */
+.inline{
+    border:1px solid red;
+    width:300px;
+    /* display:inline-block;  can use inline and block*/
+    display:block; 
+    /* it become block */
+}
+
+/* Block */
+
+.block{
+    border:2px solid red;
+    width:400px;
+    display:inline-block;
+}
+
+/* Float */
+
+.float-left img{
+    width:30%;
+    float:left;
+
+
+}
+
+.clear{
+    clear:both;
+}
+
+.float_right img{
+    width:30%;
+    float:right;
+}
