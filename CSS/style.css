@@ -99,6 +99,7 @@
 
 
 /* Position */
+/* Position relative */
 
 .relative_parent{
     border:1px solid red;
@@ -145,3 +146,32 @@ scroll lae appear */
     top:100px;
     left:200px;
 }
+
+
+/* Font Online */
+.online{
+    font-family: 'Inconsolata', monospace;
+font-family: 'Poppins', sans-serif;
+}
+
+
+/* Font Offline */
+@font-face {
+    src: url(Kolker_Brush/KolkerBrush-Regular.ttf);
+    font-family: Kolker_Brush;
+}
+
+.offline{
+    font-family: Kolker_Brush;
+    font-size: 50px;
+}
+
+@font-face {
+    src: url(Bebas_Neue/BebasNeue-Regular.ttf);
+    font-family:Bebas_Neue ;
+}
+
+.offlinetwo{
+    font-family:Bebas_Neue ;
+}
+
