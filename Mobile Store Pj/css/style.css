@@ -2,3 +2,123 @@
     margin:0px;
     padding:0px;
 }
+
+/* navbar */
+.navbar ul{
+    float:right;
+    margin-top: 7px;
+}
+
+.navbar ul li{
+    display:inline-block;
+    padding:0px 15px;
+}
+
+.nav_brand{
+    display:inline-block;
+}
+
+.navbar{
+    padding:20px;
+
+}
+
+.nav_brand a{
+    text-decoration: none;
+    font-size: 24px;
+    color:rgb(80, 192, 220)
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:black;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover{
+    color:rgb(80, 192, 220);
+    letter-spacing: 5px;
+    transition-duration:.7s;
+}
+
+.cart_noti{
+    position:relative;
+    bottom: 15px;
+    background-color: black;
+    color:white;
+    display:inline-block;
+    width:20px;
+    text-align: center;
+    left:-5px;
+    border-radius: 50%;
+
+}
+
+/* bunner */
+
+@font-face {
+    src: url(Bebas_Neue/BebasNeue-Regular.ttf);
+    font-family:Bebas_Neue ;
+}
+
+
+
+.bunner_image{
+    width:100%;
+}
+
+.bunner_text{
+    position:absolute;
+    top :250px;
+    left :100px;
+
+}
+
+.shop_now{
+    padding: 10px 20px;
+    border-radius:5px;
+    border:none;
+    margin-top:20px;
+}
+
+.shop_now:hover{
+    background-color: black;
+    color:white;
+    cursor:pointer;
+}
+
+.bunner_header{
+    margin-bottom:10px;
+    font-family:Bebas_Neue ;
+}
+
+/* Categary */
+
+.category-title{
+    text-align: center;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.category center a{
+    text-decoration: none;
+    color: black;
+    border :1px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top:10px;
+}
+
+.category{
+    margin-left:300px;
+    margin-right :300px;
+}
+
+.category center a:hover{
+    color:white;
+    background-color: rgb(80, 192, 220); 
+    border: 3px solid rgb(80, 192, 220);
+}
+
+
