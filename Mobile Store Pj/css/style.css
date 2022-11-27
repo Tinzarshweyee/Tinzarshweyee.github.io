@@ -21,6 +21,7 @@
 
 .navbar{
     padding:20px;
+    box-shadow: 0px 5px 20px rgb(91, 90, 89);
 
 }
 
@@ -270,6 +271,321 @@
     padding:20px 5px 40px;
 }
 
+/* Product Start */
 
+/* Choose by Brand */
+
+.product_grid a{
+    text-align: center;
+    text-decoration:none;
+    color:black;
+    
 
     
+}
+
+.product_grid a:hover{
+    color:  rgb(80, 192, 220);
+}
+
+.product_grid h3{
+    padding-top: 20px;
+}
+
+.view_selling_devices button{
+    border:none;
+    text-align: center;
+    margin:auto;
+    display:flex;
+    border-radius: 30px;
+    padding:13px 40px;
+    margin-top: 20px;
+    background-color: rgb(55, 54, 54);
+    color:white;
+    font-size:20px;
+
+}
+
+.view_selling_devices button:hover{
+    background-color:  rgb(80, 192, 220);
+}
+
+/* Best Selling Devices */
+
+.topic_product{
+    border-left:2px solid rgb(80, 192, 220);
+    margin-left: 100px;
+    padding-left:30px;
+    margin-top: 50px;
+}
+
+.product_grid{
+    display: grid;
+    grid-template-columns:auto auto auto auto auto;
+    grid-gap:30px;
+    margin-top: 40px;
+    
+    overflow-x:hidden;
+
+}
+
+
+.img_product{
+    width:200px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.img_product:hover{
+    transform:scale(1.08);
+    transition-duration:.7s;
+}
+
+.desc{
+    text-align: center;
+}
+
+.product_grid button{
+    border:none;
+    position:relative;
+    right:0;
+    left:130px;
+    border-radius: 30px;
+    margin: 10px;
+    padding:8px;
+    background-color: black;
+    color:white;
+
+}
+
+.product_grid button:hover{
+    background-color:  rgb(80, 192, 220);
+}
+
+/* Start Blog */
+
+/* Blog Topic */
+.blog_grid{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    gap:10px;
+
+}
+
+.blog2, .blog3 , .blog4{
+    padding-top: 50px;
+   
+    
+}
+
+.blog2 button, .blog3 button, .blog4 button{
+    border-radius: 20px;
+    padding:10px 30px;
+    border:none;
+}
+
+.blog2 button:hover, .blog3 button:hover, .blog4 button:hover{
+    background-color:  rgb(80, 192, 220);
+}
+
+/* Latest Blog */
+
+.latest_grid{
+    display:grid;
+    grid-template-columns: auto auto;
+    gap:10px;
+    padding:20px;
+}
+
+.latest_grid div{
+    padding:10px;
+    
+}
+
+.latest_grid div img{
+    width:80%;
+    text-align:center;
+    margin:auto;
+    display:flex;
+}
+
+/* All Blog */
+
+.allblog_grid{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    gap:10px;
+    
+}
+
+.allblog_grid div img{
+    width:90%;
+    text-align:center;
+    margin:auto;
+    display:flex;
+}
+
+.allblog_grid div{
+    padding:10px;
+}
+
+.allblog_container{
+    position:relative;
+}
+
+.allblog_grid .allblog_text{
+    position: absolute;
+  bottom: 50px;
+  font-size: 20px;
+  left:50px;
+ 
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.blogbutton{
+    border-radius: 20px;
+    padding:10px 30px;
+    border:none; 
+    text-align: center;
+    margin:auto;
+    display:flex;
+    font-size: 20px;
+
+}
+
+.blogbutton:hover{
+    background-color:  rgb(80, 192, 220);
+}
+
+/* Start About */
+
+.about_topic{
+    text-align: center;
+    color:  rgb(80, 192, 220);
+    padding-top:20px;
+}
+
+.about_grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding:60px;
+}
+
+.about_text{
+    font-size: 20px;
+    
+}
+
+.location_text{
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Brand Ambassadors */
+
+.ambas_img img{
+    width:300px;
+    text-align:center;
+    margin:auto;
+    display:flex;
+}
+
+.ambas_text{
+    font-size:20px;
+    margin-left: 30px;
+}
+
+/* Start Contact */
+
+.contact_text{
+    text-align: center;
+    color:  rgb(80, 192, 220);
+    padding-top:20px;
+}
+
+/* .contact_grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+   
+    padding:30px;
+} */
+
+.chat{
+    background-color: rgb(211, 241, 249);
+    width:100%;
+    border-radius: 20px;
+    padding:30px;
+    margin-top: 20px;
+    
+    
+
+}
+
+/* form Start */
+
+.input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  .label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  .input[type=submit] {
+    background-color:  rgb(80, 192, 220);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(80, 192, 220) ;
+  }
+  
+  .contact_container {
+    border-radius: 5px;
+    
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+  /* Start Service */
+  .service_grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:20px;
+    padding:20px;
+  }
+
+  .service_text{
+    text-align: center;
+  }
+
+  .service_img img{
+    width:100%;
+  }
